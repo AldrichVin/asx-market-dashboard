@@ -1,0 +1,120 @@
+/* ── Reset & Hide Streamlit defaults ── */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+.stDeployButton {display: none !important;}
+[data-testid="stDecoration"] {display: none !important;}
+
+/* ── Page layout ── */
+.stApp {
+    background-color: #FFFFFF;
+}
+
+.main .block-container {
+    padding: 2rem 2.5rem 2rem 2.5rem;
+    max-width: 1200px;
+}
+
+/* ── Typography ── */
+h1 {
+    font-size: 1.75rem !important;
+    font-weight: 600 !important;
+    color: #1A1A2E !important;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.25rem !important;
+}
+
+h2, [data-testid="stSubheader"] {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #1A1A2E !important;
+    letter-spacing: -0.01em;
+    margin-top: 1.5rem !important;
+}
+
+h3 {
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    color: #374151 !important;
+}
+
+p, .stMarkdown p {
+    color: #6B7280 !important;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background-color: #FAFBFC;
+    border-right: 1px solid #E2E5E9;
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2 {
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #9CA3AF !important;
+}
+
+/* ── Metrics ── */
+[data-testid="stMetric"] {
+    background-color: #FAFBFC;
+    border: 1px solid #E2E5E9;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 0.75rem !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #9CA3AF !important;
+}
+
+[data-testid="stMetricValue"] {
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    color: #1A1A2E !important;
+}
+
+/* ── Dataframes ── */
+[data-testid="stDataFrame"] {
+    border: 1px solid #E2E5E9;
+    border-radius: 6px;
+}
+
+/* ── Dividers ── */
+hr {
+    border: none;
+    border-top: 1px solid #F0F0F0;
+    margin: 1.5rem 0;
+}
+
+/* ── Selectbox & inputs ── */
+[data-testid="stSelectbox"] label,
+[data-testid="stMultiSelect"] label,
+[data-testid="stSlider"] label,
+[data-testid="stNumberInput"] label,
+[data-testid="stRadio"] label,
+[data-testid="stCheckbox"] label {
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+    color: #6B7280 !important;
+}
+
+/* ── Warning/info boxes ── */
+[data-testid="stAlert"] {
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+/* ── Tabs ── */
+.stTabs [data-baseweb="tab"] {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
